@@ -3,103 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webpage with All CSS Selectors</title>
+    <title>CSS Selectors Demonstration</title>
     <style>
-        /* Universal Selector */
+        /* Universal Selector - Targets all elements */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        /* Type Selector */
-        h1, p {
-            font-family: Arial, sans-serif;
+        /* Type Selector - Targets all <h1> elements */
+        h1 {
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            background-color: #FF6347; /* Tomato */
+            text-align: center;
+            padding: 15px;
+            border-radius: 5px;
         }
 
-        /* Class Selector */
-        .main-content {
-            background-color: #f0f8ff;
+        /* Class Selector - Targets elements with class 'intro' */
+        .intro {
+            font-size: 18px;
+            color: #333;
+            background-color: #F0E68C; /* Khaki */
             padding: 20px;
-            border-radius: 8px;
             margin: 20px;
-        }
-
-        .highlight {
-            color: #ff6347; /* Tomato color */
-        }
-
-        /* ID Selector */
-        #header {
-            background-color: #4682b4;
-            color: white;
-            padding: 20px;
+            border-radius: 10px;
             text-align: center;
         }
 
-        /* Attribute Selector */
-        a[href] {
-            color: #1e90ff;
-            text-decoration: none;
-        }
-
-        /* Descendant Selector */
-        #footer p {
-            font-size: 14px;
-            color: #555;
-        }
-
-        /* Child Selector */
-        .container > .box {
-            background-color: #98fb98;
+        /* ID Selector - Targets element with id 'about' */
+        #about {
+            background-color: #98FB98; /* Pale Green */
+            color: #2F4F4F; /* Dark Slate Gray */
             padding: 20px;
+            margin: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        /* Descendant Selector - Targets all <p> inside <div> */
+        div p {
+            color: #556B2F; /* Dark Olive Green */
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        /* Child Selector - Targets <p> that is a direct child of <div> */
+        div > p {
+            font-weight: bold;
+            color: #8B4513; /* Saddle Brown */
+        }
+
+        /* Adjacent Sibling Selector - Targets the first <p> immediately following <h1> */
+        h1 + p {
+            color: #FFD700; /* Gold */
+            font-size: 18px;
             margin-top: 10px;
         }
 
-        /* Adjacent Sibling Selector */
-        h2 + p {
-            font-style: italic;
-            color: #555;
+        /* General Sibling Selector - Targets all <p> elements that are siblings of <h1> */
+        h1 ~ p {
+            color: #4682B4; /* Steel Blue */
+            font-size: 16px;
         }
 
-        /* General Sibling Selector */
-        h2 ~ p {
-            color: #8b4513;
-        }
-
-        /* Hover effect for links */
+        /* Pseudo-class Selector - :hover */
         a:hover {
-            color: #ff4500;
+            color: #FF4500; /* OrangeRed */
+            text-decoration: underline;
+        }
+
+        /* Pseudo-class Selector - :first-child */
+        p:first-child {
+            font-style: italic;
+            color: #DC143C; /* Crimson */
+        }
+
+        /* Pseudo-element Selector - ::before */
+        h1::before {
+            content: "🌟 "; 
+            font-size: 30px;
+        }
+
+        /* Pseudo-element Selector - ::after */
+        h1::after {
+            content: " 🌟";
+            font-size: 30px;
+        }
+
+        /* Styling for links */
+        a {
+            text-decoration: none;
+            color: #4682B4; /* Steel Blue */
+            font-weight: bold;
+        }
+
+        /* Styling for the footer */
+        footer {
+            background-color: #2ebdbd; /* Dark Slate Gray */
+            color: #f20606;
+            text-align: center;
+            padding: 10px;
+            margin-top: 30px;
         }
 
     </style>
 </head>
 <body>
 
-    <!-- Header Section -->
-    <div id="header">
-        <h1>Welcome to Our Webpage</h1>
-        <p>We use all types of CSS selectors here.</p>
+    <!-- Page content -->
+    <h1>Welcome to the CSS Selectors Demo Page</h1>
+
+    <p class="intro">This is a demonstration of different CSS selectors, including universal, type, class, ID, descendant, child, sibling, pseudo-classes, and pseudo-elements.</p>
+
+    <div>
+        <p>This is a bold paragraph, and it's a direct child of the div element.</p>
+        <p>This is another paragraph inside the div element.</p>
     </div>
 
-    <!-- Main Content Section with class -->
-    <div class="main-content">
-        <h2 class="highlight">Introduction</h2>
-        <p>This webpage demonstrates the use of various CSS selectors. We are using **all** types of CSS selectors for styling different elements.</p>
-        
-        <a href="https://www.example.com">Visit Example Website</a>
+    <p>Here's another paragraph that demonstrates sibling selectors.</p>
+
+    <a href="#">Click here to see the hover effect!</a>
+
+    <div id="about">
+        <h2>About CSS Selectors</h2>
+        <p>This section uses the ID selector to apply unique styling to the "about" section.</p>
     </div>
 
-    <!-- Container with Child and Sibling Selectors -->
-    <div class="container">
-        <div class="box">This is a box styled using the child selector.</div>
-        <div class="box">Another box styled using the child selector.</div>
-    </div>
-
-    <!-- Footer Section with Descendant Selector -->
-    <div id="footer">
-        <p>Thank you for visiting. We hope you learned about CSS selectors.</p>
-    </div>
+    <footer>
+        <p>&copy; 2025 CSS Selectors Demo</p>
+    </footer>
 
 </body>
 </html>

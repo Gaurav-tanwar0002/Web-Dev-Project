@@ -1,0 +1,97 @@
+/* Universal Selector - Targets all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Type Selector - Targets all <h1> elements */
+h1 {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    background-color: #FF6347; /* Tomato */
+    border-radius: 10px;
+}
+
+/* Class Selector - Targets elements with class 'intro' */
+.intro {
+    font-size: 18px;
+    color: #333;
+    background-color: #F0E68C; /* Khaki */
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* ID Selector - Targets the <header> element */
+header {
+    background-color: #98FB98; /* Pale Green */
+    text-align: center;
+    padding: 20px;
+}
+
+/* Descendant Selector - Targets all <li> elements inside .grocery-list */
+.grocery-list li {
+    color: #333;
+    font-size: 18px;
+    list-style-type: square;
+    margin: 5px 0;
+}
+
+/* Child Selector - Targets <img> that is a direct child of <header> */
+header > img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Adjacent Sibling Selector - Targets the first <p> immediately following <h1> */
+h1 + p {
+    font-size: 20px;
+    color: #4682B4; /* Steel Blue */
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* General Sibling Selector - Targets all <ul> elements that are siblings of <p> */
+p ~ ul {
+    margin: 20px;
+    padding: 15px;
+    background-color: #F0E68C; /* Khaki */
+    border-radius: 5px;
+}
+
+/* Pseudo-class Selector - :hover */
+a:hover {
+    color: #FF4500; /* Orange Red */
+    text-decoration: underline;
+}
+
+/* Pseudo-element Selector - ::before */
+a::before {
+    content: "🔗 ";
+    font-size: 18px;
+}
+
+/* Styling for the anchor link */
+a {
+    text-decoration: none;
+    color: #2F4F4F; /* Dark Slate Gray */
+    font-size: 18px;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Styling for the footer (if you want to add footer later) */
+footer {
+    background-color: #2F4F4F; /* Dark Slate Gray */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}

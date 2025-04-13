@@ -3,64 +3,60 @@
 <head>
     <title>Application Form</title>
 </head>
-<body>
+<body style="background-color: #fdf6f0; font-family: 'Segoe UI', sans-serif; color: #333; padding: 40px;">
 
-    <h1>Application Form</h1>
+    <h1 style="text-align: center; color: #d35400;">Application Form</h1>
 
-    <form action="submit_form.php" method="post">
+    <form action="submit_form.php" method="post" style="max-width: 600px; margin: auto; background-color: #fff; padding: 30px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
 
         <!-- Full Name -->
-        <label for="fullname">Full Name:</label><br>
-        <input type="text" id="fullname" name="fullname"><br><br>
+        <label for="fullname" style="font-weight: bold;">Full Name:</label><br>
+        <input type="text" id="fullname" name="fullname" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px; margin-bottom: 15px;"><br>
 
         <!-- Date of Birth -->
-        <label for="dob">Date of Birth:</label><br>
-        <input type="date" id="dob" name="dob"><br><br>
+        <label for="dob" style="font-weight: bold;">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px; margin-bottom: 15px;"><br>
 
         <!-- Email -->
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email"><br><br>
+        <label for="email" style="font-weight: bold;">Email:</label><br>
+        <input type="email" id="email" name="email" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px; margin-bottom: 15px;"><br>
 
         <!-- Phone Number -->
-        <label for="phone">Phone Number:</label><br>
-        <input type="tel" id="phone" name="phone"><br><br>
+        <label for="phone" style="font-weight: bold;">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px; margin-bottom: 15px;"><br>
 
         <!-- Gender -->
-        <label>Gender:</label><br>
-        <input type="radio" id="male" name="gender" value="Male">
-        <label for="male">Male</label><br>
-        <input type="radio" id="female" name="gender" value="Female">
-        <label for="female">Female</label><br>
-        <input type="radio" id="other" name="gender" value="Other">
-        <label for="other">Other</label><br><br>
+        <label style="font-weight: bold;">Gender:</label><br>
+        <label><input type="radio" id="male" name="gender" value="Male" style="margin-right: 6px;">Male</label><br>
+        <label><input type="radio" id="female" name="gender" value="Female" style="margin-right: 6px;">Female</label><br>
+        <label><input type="radio" id="other" name="gender" value="Other" style="margin-right: 6px;">Other</label><br><br>
 
         <!-- Address -->
-        <label for="address">Address:</label><br>
-        <textarea id="address" name="address" rows="4" cols="30"></textarea><br><br>
+        <label for="address" style="font-weight: bold;">Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="30" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px; margin-bottom: 15px;"></textarea><br>
 
         <!-- Qualification -->
-        <label for="qualification">Qualification:</label><br>
-        <select id="qualification" name="qualification">
+        <label for="qualification" style="font-weight: bold;">Qualification:</label><br>
+        <select id="qualification" name="qualification" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px; margin-bottom: 15px;">
             <option value="highschool">High School</option>
             <option value="intermediate">Intermediate</option>
             <option value="graduate">Graduate</option>
             <option value="postgraduate">Post Graduate</option>
-        </select><br><br>
+        </select><br>
 
         <!-- Skills -->
-        <label>Skills:</label><br>
-        <input type="checkbox" name="skills" value="HTML"> HTML<br>
-        <input type="checkbox" name="skills" value="CSS"> CSS<br>
-        <input type="checkbox" name="skills" value="JavaScript"> JavaScript<br>
-        <input type="checkbox" name="skills" value="Python"> Python<br><br>
+        <label style="font-weight: bold;">Skills:</label><br>
+        <label><input type="checkbox" name="skills" value="HTML" style="margin-right: 6px;">HTML</label><br>
+        <label><input type="checkbox" name="skills" value="CSS" style="margin-right: 6px;">CSS</label><br>
+        <label><input type="checkbox" name="skills" value="JavaScript" style="margin-right: 6px;">JavaScript</label><br>
+        <label><input type="checkbox" name="skills" value="Python" style="margin-right: 6px;">Python</label><br><br>
 
         <!-- Upload Resume -->
-        <label for="resume">Upload Resume:</label><br>
-        <input type="file" id="resume" name="resume"><br><br>
+        <label for="resume" style="font-weight: bold;">Upload Resume:</label><br>
+        <input type="file" id="resume" name="resume" style="margin-bottom: 20px;"><br>
 
         <!-- Submit Button -->
-        <input type="submit" value="Submit Application">
-
+        <input type="submit" value="Submit Application" style="background-color: #d35400; color: white; padding: 12px 20px; border: none; border-radius: 6px; font-size: 16px; cursor: pointer;">
     </form>
 
 </body>
